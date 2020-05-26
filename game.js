@@ -91,3 +91,11 @@ function startover(){
   gamePattern=[];
   started=false;
 }
+
+$(".bttn").click(function() {
+  if (!started) {
+    $("#level-title").text("level " + level);
+    nextSequence();
+    started=true;
+  }
+});
